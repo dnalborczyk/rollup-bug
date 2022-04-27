@@ -22,7 +22,7 @@ jobs:
         node-version: 14
         cache: 'npm'
     - run: npm ci
-    - run: echo %GITHUB_WORKSPACE%
+    - run: echo "$GITHUB_WORKSPACE"
 #     - run: subst z: %GITHUB_WORKSPACE%
 #     - run: cd z:
     - run: npm run build --if-present
