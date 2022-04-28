@@ -29,5 +29,5 @@ jobs:
     - run: npm run test:noconfig
     - run: npm run test:config
     - run: npx rollup main.js
-    - run: npx rollup.js -c
+    - run: npx rollup -c
     - run: npm test
