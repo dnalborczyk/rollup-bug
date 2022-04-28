@@ -23,7 +23,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: echo ${{ github.workspace }}
-#     - run: subst z: %GITHUB_WORKSPACE%
-#     - run: cd z:
+    - run: subst "z:" ${{ github.workspace }}
+    - run: cd "z:"
     - run: npm run build --if-present
     - run: npm test
