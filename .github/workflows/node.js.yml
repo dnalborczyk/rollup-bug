@@ -21,7 +21,8 @@ jobs:
       with:
         node-version: 14
         cache: 'npm'
-    - run: npm ci
+    - run: npm i
+    - run: npx rollup --version
     - run: echo ${{ github.workspace }}
     - run: subst "z:" ${{ github.workspace }}
     - run: cd "z:"
