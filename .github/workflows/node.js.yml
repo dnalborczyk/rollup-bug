@@ -31,4 +31,3 @@ jobs:
     - run: npm run test:config
     - run: npx rollup main.js
     - run: npx rollup -c
-    - run: npm test
