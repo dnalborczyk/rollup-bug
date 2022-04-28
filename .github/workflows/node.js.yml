@@ -25,6 +25,9 @@ jobs:
     - run: echo ${{ github.workspace }}
     - run: subst "z:" ${{ github.workspace }}
     - run: cd "z:"
+    - run: dir
     - run: npm run test:noconfig
     - run: npm run test:config
+    - run: npx rollup main.js
+    - run: npx rollup -c
     - run: npm test
